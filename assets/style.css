@@ -10,12 +10,6 @@ a{
     text-decoration: none;
 }
 
-.download-links{
-    width: 60%;
-    margin: 1em auto 2em auto;
-    text-align: center;
-}
-
 header{
     background-image: url(./img/jumbo.png);
     background-size: cover;
@@ -26,15 +20,40 @@ header{
 
 header nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
     margin: 0 auto;
+    text-transform: capitalize;
 }
 
 header nav ul{
     display: flex;
     gap: 10px;
 }
+
+header nav a{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.download-links{
+    width: 60%;
+    margin: 1em auto 2em auto;
+    text-align: center;
+}
+
+.download-links button{
+    padding: 2%;
+    border-radius: 20px;
+}
+
+#second-button{
+    background-color: #24272a;
+    color: white;
+}
+
+
 
 header nav ul li{
     list-style-type: none;
