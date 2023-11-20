@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 body{
     font-size: 180%;
@@ -53,7 +53,7 @@ p{
 }
 
 .download-links button{
-    padding: 2%;
+    padding: 1%;
     border-radius: 30px;
 }
 
@@ -81,6 +81,7 @@ section{
 .container{
     width: 80%;
     margin: 0 auto;
+    /* text-align: center; */
 }
 
 .img-text figure{
@@ -93,7 +94,7 @@ section{
 }
 
 section.discord-services:nth-child(even){
-    background-color: lightgray;
+    background-color: rgba(212, 212, 212, 0.5)
 }
 
 section.discord-services:nth-child(even) .img-text figure{
@@ -145,13 +146,15 @@ footer{
 .footer-container img{
     height: 20px;
 }
-footer ul li{
+footer ul li a{
     list-style-type: none;
+    color: white;
 }
 
 footer .footer-container{
     display: flex;
     /* justify-content: space-between; */
+    padding-inline: 5em;
 }
 
 footer .footer-container > div{
@@ -168,3 +171,9 @@ footer .footer-container>div:first-child{
     padding: 5%;
 }
 
+.register button{
+    padding: 1%;
+    border-radius: 30px;
+    background-color: #9998E8;
+    color: white;
+}
