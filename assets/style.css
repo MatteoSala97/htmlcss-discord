@@ -3,41 +3,50 @@
     margin: 0;
     padding: 0;
 
-    /* border: 1px solid black; */
-}
-body {
-    padding: 5em;
-}
-
-header{
-    display: flex;
-    justify-content: space-around;
-    padding: 1em;
-    background-color: lightcyan;
-}
-
-.hero{
-    background-color: #0fd7cd;
-    height: 300px;
-}
-
-li{
-    list-style-type: none;
+    border: 1px solid black;
 }
 
 a{
     text-decoration: none;
 }
 
-.flex-ul{
+.download-links{
+    width: 60%;
+    margin: 1em auto 2em auto;
+    text-align: center;
+}
+
+header{
+    background-image: url(./img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 30%;
+    color: white;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li{
     list-style-type: none;
 }
 
-.logo, .button{
-    flex-basis: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero{
+    background-image: url(./img/jumbo.png);
+    color: white;
+}
+
+li{
+    list-style-type: none;
 }
 
 .nav-links ul{
@@ -55,7 +64,7 @@ p{
     padding-block: 1em;
 }
 /* qui dovrebbe bastare text align center eliminando quello scritto sopra */
-div h1, p {
+div h2, p {
     text-align: center;
 }
 
@@ -83,10 +92,6 @@ div h1, p {
 .text, figure{
     flex-basis: 40%;
     padding-inline: 5em;
-}
-
-figure{
-    background-color: lightgreen;
 }
 
 .text{
