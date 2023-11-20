@@ -111,6 +111,31 @@ section.discord-services div button{
     color: white;
 }
 
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.stars {
+    background-image: url(./img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: fit-content;
+    
+}
+.mac {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3em;
+}   
+
+.mac a{
+    background-color: #9998E8;
+    padding: 1%;
+    border-radius: 30px;
+    }   
+
+
 /* footer */
 
 footer{
@@ -142,3 +167,4 @@ footer .footer-container>div:first-child{
     justify-content: space-between;
     padding: 5%;
 }
+
