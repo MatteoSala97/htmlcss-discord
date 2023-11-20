@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 body{
     font-size: 180%;
@@ -79,8 +79,9 @@ section .img-text{
 }
 
 .discord-services{
-    padding-inline: 1em;
+    padding-inline: 2em;
 }
+
 section .img-text figure{
     flex-basis: 70%;
 }
@@ -88,9 +89,10 @@ section .img-text figure{
 section .img-text .section-text{
     flex-basis: 30%;
 }
+
 /* create wave */
 section.discord-services:nth-child(even){
-    background-color: rgba(212, 212, 212, 0.5);
+    background-color: lightgray;
 }
 
 section.discord-services:nth-child(even) .img-text figure{
@@ -101,15 +103,35 @@ section.discord-services:last-child{
     text-align: center;
 }
 
-/* footer */
-.footer-nav{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+section.discord-services div button{
+    background-color: #9998E8;
+    padding: 1%;
+    border-radius: 30px;
+    color: white;
 }
 
-.menu-title{
-    color: #817CE2;
+/* footer */
+
+footer{
+    background-color: #24272a;
+    color: #9998E8;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+footer .footer-container{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+footer .footer-container > div{
+    flex-grow: 1;
+}
+
+footer .footer-container>div:first-child{
+    flex-grow: 2;
 }
 
 .register{
