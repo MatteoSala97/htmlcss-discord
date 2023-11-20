@@ -46,7 +46,7 @@ p{
     padding-block: 1em;
 }
 
-.download-links{
+.downloa-d-links{
     width: 60%;
     margin: 1em auto 2em auto;
     text-align: center;
@@ -74,23 +74,24 @@ section{
     padding-block: 20px;
 }
 
-section .img-text {
+.img-text {
     display: flex;
 }
 
-.discord-services{
-    padding-inline: 2em;
+.container{
+    width: 80%;
+    margin: 0 auto;
 }
 
-section .img-text figure{
+.img-text figure{
     flex-basis: 70%;
+    justify-content: space-between;
 }
 
-section .img-text .section-text{
+.img-text .section-text{
     flex-basis: 30%;
 }
 
-create wave
 section.discord-services:nth-child(even){
     background-color: lightgray;
 }
@@ -116,7 +117,9 @@ footer{
     background-color: #24272a;
     color: #9998E8;
 }
-
+.footer-container img{
+    height: 20px;
+}
 footer ul li{
     list-style-type: none;
 }
