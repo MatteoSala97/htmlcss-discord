@@ -3,19 +3,23 @@
     margin: 0;
     padding: 0;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+body{
+    font-size: 180%;
 }
 
-a{
+a, li{
     text-decoration: none;
+    list-style-type: none;
 }
 
 header{
     background-image: url(./img/jumbo.png);
-    background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 30%;
+    background-size: cover;
     color: white;
+    text-align: center;
 }
 
 header nav{
@@ -28,13 +32,18 @@ header nav{
 
 header nav ul{
     display: flex;
-    gap: 10px;
+    gap: 3em;
 }
 
 header nav a{
     background-color: white;
     padding: 10px;
     border-radius: 30px;
+}
+
+p{
+    line-height: 150%;
+    padding-block: 1em;
 }
 
 .download-links{
@@ -45,7 +54,7 @@ header nav a{
 
 .download-links button{
     padding: 2%;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 #second-button{
@@ -53,82 +62,46 @@ header nav a{
     color: white;
 }
 
-
-
-header nav ul li{
-    list-style-type: none;
-}
-
 .hero{
-    background-image: url(./img/jumbo.png);
     color: white;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
-li{
-    list-style-type: none;
+/*  image + text section */
+
+section{
+    padding-block: 20px;
 }
 
-.nav-links ul{
+section .img-text{
     display: flex;
-    gap: 1em;
 }
 
-.nav-links ul li{
-    list-style-type: none;
-    /* padding-inline: 1em; */
-}
-
-p{
-    line-height: 150%;
-    padding-block: 1em;
-}
-/* qui dovrebbe bastare text align center eliminando quello scritto sopra */
-div h2, p {
-    text-align: center;
-}
-
-.download-links ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.download-links ul li{
+.discord-services{
     padding-inline: 1em;
 }
-
-.download-links ul li a {
-    background-color: lightblue;
-    border-radius: 35%;
-    padding: 10px;
+section .img-text figure{
+    flex-basis: 70%;
 }
 
-.section{
-    display: flex;
-    justify-content: space-between;
+section .img-text .section-text{
+    flex-basis: 30%;
+}
+/* create wave */
+section.discord-services:nth-child(even){
+    background-color: rgba(212, 212, 212, 0.5);
 }
 
-.text, figure{
-    flex-basis: 40%;
-    padding-inline: 5em;
+section.discord-services:nth-child(even) .img-text figure{
+    order: 1;
 }
 
-.text{
-    text-align: center;
-    background-color: lightpink;
-}
-
-.download-links a{
-    text-decoration: none;
-    background-color: lightblue;
-    border-radius: 35%;
-    padding: 10px;
-}
-
-.ending-section{
+section.discord-services:last-child{
     text-align: center;
 }
 
+/* footer */
 .footer-nav{
     display: flex;
     justify-content: space-between;
